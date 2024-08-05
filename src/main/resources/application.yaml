@@ -1,0 +1,21 @@
+spring:
+
+    #  servlet:
+    #    context-path: /identity
+    #    c?i n?y ?? nay mai n?u c? l?m microservice th? n?...  l?c m? postman
+    application:
+        name: product_project
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/product
+        username: root
+        password:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
